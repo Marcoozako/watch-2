@@ -1,0 +1,8 @@
+<h1><strong>My LIST 🎥</strong></h1>
+
+<% @list.each do |list| %>
+  <p><%= link_to list.name, list_path(list.id) %>
+  <%= link_to 'Delete', list_path(list.id), data: {turbo_method:'delete', turbo_confirm: 'Up to You?'}%></p>
+<% end %>
+
+<%= link_to 'Create a List', new_list_path %>
