@@ -1,0 +1,19 @@
+<nav class="container-fluid navbar">
+  <div class="navbar-collection d-flex justify-content-around">
+          <div class='d-flex'>
+            <%= image_tag "https://d26jy9fbi4q9wx.cloudfront.net/assets/logo-ae2beeecce25d711f577b08deb9adfc6c02b673ed106b8d6c3da0f1721d9da33.svg" %>
+            <i class="mdi mdi-menu menu-trigger-icon " ></i>
+          </div>
+            <ul class="menu-panel-items d-flex">
+                  <li class="menu-panel-item">
+                <%= link_to 'Mes listes', lists_path %>
+                <i class="menu-panel-item-icon "></i>
+                  </li>
+
+                  <li class="menu-panel-item">
+              <%= link_to 'Nouvelle Liste', new_list_path %>
+                <i class="menu-panel-item-icon "></i>
+                  </li>
+            </ul>
+  </div>
+</nav>
