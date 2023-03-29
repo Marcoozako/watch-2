@@ -1,6 +1,6 @@
 <h1><strong>My LIST 🎥</strong></h1>
 
-<% @list.each do |list| %>
+<% @lists.each do |list| %>
   <p><%= link_to list.name, list_path(list.id) %>
   <%= link_to 'Delete', list_path(list.id), data: {turbo_method:'delete', turbo_confirm: 'Up to You?'}%></p>
 <% end %>

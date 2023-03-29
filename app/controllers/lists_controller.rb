@@ -7,7 +7,7 @@ class ListsController < ApplicationController
 
   def index
     @films = call_api["backdrop_path"]
-    @list = List.all
+    @lists = List.all
   end
 
   def show
